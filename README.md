@@ -27,7 +27,7 @@ This project implements a car rental system that allows users to browse availabl
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/it'sZORAL1/Project-Car-Rental.git
+    git clone https://github.com/itsZORAL1/Project-Car-Rental.git
     ```
 
 2. Set up your MySQL database and update the configuration in `src/main/resources/persistence.xml`.
