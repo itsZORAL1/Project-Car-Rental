@@ -38,7 +38,7 @@ public class PaymentServlet extends HttpServlet {
 	    int amount = Integer.parseInt(request.getParameter("amount"));  // You might get the amount from the client
 
 	    // Set your secret key: remember to change this to your live secret key in production
-	    Stripe.apiKey = "sk_test_51OFiDdGdl01o1gyXtR9aeMwCxsGnaklG1PsXVGDXgBvQXaXF5grycGelq9GQBqJXsHQW35KSpJpiWe1hdn2sxc06001joAAYP5";
+	    Stripe.apiKey = "private key";
 
 	    // Create a charge
 	    try {
@@ -84,7 +84,7 @@ public class PaymentServlet extends HttpServlet {
         int amount = json.getInt("amount");  // You might get the amount from the client
 
         // Set your secret key: remember to change this to your live secret key in production
-        Stripe.apiKey = "sk_test_51OFiDdGdl01o1gyXtR9aeMwCxsGnaklG1PsXVGDXgBvQXaXF5grycGelq9GQBqJXsHQW35KSpJpiWe1hdn2sxc06001joAAYP5";
+        Stripe.apiKey = "private key";
 
         // Create a charge
         try {
