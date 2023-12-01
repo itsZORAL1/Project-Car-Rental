@@ -169,7 +169,7 @@
  <!-- Script for Stripe integration -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        var stripe = Stripe('pk_test_51OFiDdGdl01o1gyXU80n9G24TCdVRzklR7Nm39LsX2iBLi5n2cU7XHR2zzhKL58bs3gB1NaETjCdgS2yRFRJ4pHJ00QeoRgQZK');
+        var stripe = Stripe('public key');
         var elements = stripe.elements();
         var card = elements.create('card');
 
@@ -222,7 +222,7 @@
             <div id="paypalButton"></div>
             <button type="button" onclick="reserveNow()">Reserve Now</button>
 
-            <script src="https://www.paypal.com/sdk/js?client-id=AbgKW-bLkNh_Qhdf0-URLoYyvVC5YSnNCkVOELnVckhvWVzPtnfkA8sdzSYhLAf-d-AxYu8wWTjU3jCp"></script>
+            <script src="public key"></script>
             <script>
                 function reserveNow() {
                     paypal.Buttons({
@@ -239,7 +239,7 @@
                             return actions.order.capture().then(function(details) {
                                 // Make an AJAX request to your Servlet
                                 var xhr = new XMLHttpRequest();
-                                xhr.open('POST', '/Servlet-JSP-Project-School-Management-System/paypal'); // Update with your actual Servlet mapping
+                                xhr.open('POST', '/Project-Car-Rental/paypal'); // Update with your actual Servlet mapping
                                 xhr.setRequestHeader('Content-Type', 'application/json');
 
                                 var payload = {
