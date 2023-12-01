@@ -1,0 +1,124 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>Archetype Created Web Application</display-name>
+
+    <!-- Servlet 1 -->
+    <servlet>
+        <servlet-name>Recue</servlet-name>
+        <servlet-class>com.jsp.servlet.Recue</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Recue</servlet-name>
+        <url-pattern>/recue</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet 2 -->
+ <servlet>
+    <servlet-name>PersonnelResevationServlet</servlet-name>
+    <servlet-class>com.jsp.servlet.PersonnelResevationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>PersonnelResevationServlet</servlet-name>
+    <url-pattern>/listreserv</url-pattern>
+</servlet-mapping>
+
+    <!-- Servlet 3 -->
+ <servlet>
+    <servlet-name>PersonnelClientsServlet</servlet-name>
+    <servlet-class>com.jsp.servlet.PersonnelClientsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>PersonnelClientsServlet</servlet-name>
+    <url-pattern>/allclients</url-pattern>
+</servlet-mapping>
+    <!-- Servlet 4 -->
+ <servlet>
+    <servlet-name>PersonnelCarsServlet</servlet-name>
+    <servlet-class>com.jsp.servlet.PersonnelCarsServlet </servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>PersonnelCarsServlet </servlet-name>
+    <url-pattern>/cars</url-pattern>
+</servlet-mapping>
+   <!-- Servlet 5 -->
+ <servlet>
+    <servlet-name>ClientUpdate</servlet-name>
+    <servlet-class>com.jsp.servlet.ClientUpdate</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ClientUpdate</servlet-name>
+    <url-pattern>/clientUpdate</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>CarUpdate</servlet-name>
+    <servlet-class>com.jsp.servlet.CarUpdate</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CarUpdate</servlet-name>
+    <url-pattern>/carUpdate</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>ClientDelete</servlet-name>
+    <servlet-class>com.jsp.servlet.ClientDelete</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ClientDelete</servlet-name>
+    <url-pattern>/clientDelete</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+    <servlet-name>CarDelete</servlet-name>
+    <servlet-class>com.jsp.servlet.CarDelete</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CarDelete</servlet-name>
+    <url-pattern>/carDelete</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>OneReservationUpdate</servlet-name>
+    <servlet-class>com.jsp.servlet.OneReservationUpdate</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>OneReservationUpdate</servlet-name>
+    <url-pattern>/oneReservationUpdate</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>OneReservationDelete</servlet-name>
+    <servlet-class>com.jsp.servlet.OneReservationDelete</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>OneReservationDelete</servlet-name>
+    <url-pattern>/oneReservationDelete</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>PaymentServlet</servlet-name>
+    <servlet-class>com.jsp.servlet.PaymentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>PaymentServlet</servlet-name>
+    <url-pattern>/charge</url-pattern>
+    <url-pattern>/charge/*</url-pattern>
+</servlet-mapping>
+ <servlet>
+    <servlet-name>PaypalPaymentServlet</servlet-name>
+    <servlet-class>com.jsp.servlet.PaypalPaymentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>PaypalPaymentServlet</servlet-name>
+    <url-pattern>/paypal</url-pattern>
+</servlet-mapping>
+
+
+
+
+    <!-- Add more servlets as needed -->
+
+</web-app>
