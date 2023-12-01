@@ -20,8 +20,8 @@ public class PaypalPaymentServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     // Replace these with your actual PayPal credentials
-    private static final String PAYPAL_CLIENT_ID = "AbgKW-bLkNh_Qhdf0-URLoYyvVC5YSnNCkVOELnVckhvWVzPtnfkA8sdzSYhLAf-d-AxYu8wWTjU3jCp";
-    private static final String PAYPAL_SECRET_KEY = "ELkVoLj7E9pJvqr3mOnRxVOM-KjW632QQYwGjmTliiWwI28kWdE0kLACBgeT1WbRrltHIRGNGcGml0KX";
+    private static final String PAYPAL_CLIENT_ID = "public";
+    private static final String PAYPAL_SECRET_KEY = "private";
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
